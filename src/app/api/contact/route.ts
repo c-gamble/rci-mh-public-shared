@@ -18,7 +18,7 @@ export async function POST( request: Request ) {
         host: "smtp.gmail.com",
         auth: {
           user: 'rci.mh.superuser@gmail.com',
-          pass: "iipe behn teuj wspm",
+          pass: process.env.EMAIL_PASSWORD,
         },
         secure: true,
     });
